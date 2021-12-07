@@ -33,8 +33,8 @@ export default function Form(): ReactElement {
 
         <label className="grid">
           City
-          <input list="country" required type="text" />
-          <datalist id="country">
+          <input list="city" required type="text" />
+          <datalist id="city">
             {cities.map((city) =>{
               return <option value={city} key={city} />
             })}
@@ -52,7 +52,7 @@ export default function Form(): ReactElement {
         </label>
         <label className="grid md:col-span-2">
           Write me something
-          <textarea name="state" className="h-36 outline-none" />
+          <textarea name="message" className="h-36 outline-none" />
         </label>
         <div>
           <input
@@ -61,7 +61,7 @@ export default function Form(): ReactElement {
             name="about"
             value="Question"
             onClick={hideField}
-            className=" form-radio text-secondbg  mx-2 border-2 border-black"
+            className=" form-radio text-red-400  mx-2 border-2 border-black"
           />
           <label htmlFor="QA">Question</label>
           <br />
@@ -71,7 +71,7 @@ export default function Form(): ReactElement {
             name="about"
             value="Comment"
             onClick={hideField}
-            className="form-radio text-secondbg  mx-2 border-2 border-black"
+            className="form-radio text-red-400  mx-2 border-2 border-black"
           />
           <label htmlFor="CM">Comment</label>
           <br />
@@ -81,7 +81,7 @@ export default function Form(): ReactElement {
             name="about"
             onClick={() => setShowField(true)}
             value="Hiring"
-            className=" form-radio text-secondbg  mx-2 border-2 border-black"
+            className=" form-radio text-red-400  mx-2 border-2 border-black"
           />
           <label htmlFor="HI">Hiring</label>
           <br />
@@ -89,6 +89,7 @@ export default function Form(): ReactElement {
 
         <input
           type="text"
+          name="subject"
           className={
             !showField
               ? "hidden"
@@ -102,8 +103,9 @@ export default function Form(): ReactElement {
         />
         <input
           type="hidden"
-          id="116523200"
+          id="hiddenInput"
           name="Mohammadhossein Sobhanmanesh"
+          value="id is-> 116523200"
         />
       </form>
     </div>

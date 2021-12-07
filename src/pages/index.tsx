@@ -15,7 +15,11 @@ export default function Home() {
           </Link>
         </div>
         <div>
-          <div className="w-4/5 h-96 rounded-lg bg-gray-900 mx-auto"></div>
+          <div className="w-4/5 h-196 rounded-lg bg-gray-900 mx-auto overflow-hidden">
+            <img  src="./Saman's Image2.jpeg" alt="Saman Manesh" className="w-full h-full object-cover" />
+
+
+          </div>
         </div>
       </main>
     </div>
