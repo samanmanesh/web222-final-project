@@ -6,68 +6,56 @@ export default function Form(): ReactElement {
 
   return (
     <div>
-      <form action="" className="grid gap-2 " method="post" >
-        <div className=" md:flex ">
-            <label className="grid md:flex-auto md:mr-5 ">
-              First name
-              <input
-                type="text"
-                name="firstName"
-                className="bg-secondbg rounded text-white h-9 outline-none  focus:ring-2 focus:ring-red-400 "
-                required
-              />
-            </label>
+      <form
+        action=""
+        className="grid gap-y-4 gap-x-8 md:grid-cols-2"
+        method="post"
+      >
+        <label className="grid">
+          First name
+          <input type="text" name="firstName" required />
+        </label>
 
-            <label className="grid md:flex-auto ">
-              Last name
-              <input
-                type="text"
-                name="lastName"
-                className="bg-secondbg rounded text-white h-9 outline-none  focus:ring-2 focus:ring-red-400"
-                required
-              />
-            </label>
+        <label className="grid">
+          Last name
+          <input type="text" name="lastName" required />
+        </label>
 
-        </div>
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          className="bg-secondbg rounded text-white h-9 outline-none  focus:ring-2 focus:ring-red-400"
-          required
-        />
-        <label htmlFor="address">Address</label>
-        <input type="address" className="bg-secondbg rounded  h-9 outline-none  focus:ring-2 focus:ring-red-400" required  />
-        <label htmlFor="city">City</label>
-        <input
-          list="country"
-          className="bg-secondbg rounded  text-white outline-none h-9 focus:ring-2 focus:ring-red-400"
-          required
-        />
-        <datalist id="country">
-          <option value="Toronto" />
-          <option value="New York" />
-          <option value="London" />
-          <option value="Rome" />
-          <option value="Paris" />
-          <option value="Istanbul" />
-        </datalist>
-        {/*regular expression for postal code */}
+        <label className="grid md:col-span-2">
+          Email
+          <input type="email" name="email" id="email" required />
+        </label>
+        <label className="grid md:col-span-2">
+          Address
+          <input type="address" required />
+        </label>
 
-        <label>
+        <label className="grid">
+          City
+          <input list="country" required type="text" />
+          <datalist id="country">
+            <option value="Toronto" />
+            <option value="New York" />
+            <option value="London" />
+            <option value="Rome" />
+            <option value="Paris" />
+            <option value="Istanbul" />
+          </datalist>
+        </label>
+
+        <label className="grid ">
           Postal Code
           <input
             type="text"
             name="postalCode"
-            className="bg-secondbg rounded  h-9 text-white outline-none  focus:ring-2 focus:ring-red-400"
             required
             pattern="^\d{5}-\d{4}|\d{5}|[A-Z]\d[A-Z] \d[A-Z]\d$"
           />
         </label>
-
-        <label htmlFor="state">Write me something</label>
-        <textarea name="state" className="bg-secondbg rounded text-white h-14" />
+        <label className="grid md:col-span-2">
+          Write me something
+          <textarea name="state" className="h-36 outline-none" />
+        </label>
         <div>
           <input
             type="radio"
@@ -97,23 +85,25 @@ export default function Form(): ReactElement {
           <label htmlFor="HI">Hiring</label>
           <br />
         </div>
-        <input
-          
-          type="text"
-          className={!showField ? "hidden" : "bg-secondbg rounded  h-9 text-white outline-none  focus:ring-2 focus:ring-red-400"}
-        />
 
+        <input
+          type="text"
+          className={
+            !showField
+              ? "hidden"
+              : "bg-secondbg rounded text-white outline-none  focus:ring-2 focus:ring-red-400  md:col-span-2"
+          }
+        />
         <input
           type="submit"
           value="Submit"
-          className="bg-secondbg rounded text-white"
+          className="px-4 py-2 rounded cursor-pointer text-bg-secondbg text-lg font-semibold border-4  border-secondbg  self-end md:col-span-2 focus:bg-red-400 outline-none focus:text-white transition"
         />
         <input
           type="hidden"
           id="116523200"
           name="Mohammadhossein Sobhanmanesh"
         />
-
       </form>
     </div>
   );
