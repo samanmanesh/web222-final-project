@@ -11,7 +11,7 @@ export default function Home() {
             I'm a full-stack developer focused on front-end based in Toronto.
           </p>
           <Link href="/about">
-            <span className="text-2xl font-medium select-none cursor-pointer">
+            <span className="text-2xl font-medium select-none cursor-pointer hover:underline">
               More about me &rarr;
             </span>
           </Link>
