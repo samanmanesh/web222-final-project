@@ -1,12 +1,11 @@
-export default function Home() {
+export default function Works() {
+  
   return (
-    <div className="container flex items-center p-4 mx-auto min-h-screen justify-center">
-      <main>
-        <h1 className="font-mono text-xl code">
-          works to <span className="text-purple-700">Nextjs</span>,{" "}
-          <span className="text-indigo-700">TailwindCSS</span> and{" "}
-          <span className="text-gray-700">TypeScript</span>
-        </h1>
+    <div className="wrapper md:mt-24">
+      <main className="grid gap-16 xl:grid-cols-2 divide-y-2 xl:divide-y-0 xl:divide-x-2 divide-gray-700 divide-solid">
+        <div className="text-center md:text-left">
+          <h1 className="mb-12">My Work</h1>
+        </div>
       </main>
     </div>
   );

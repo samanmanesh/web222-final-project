@@ -2,3 +2,14 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+.wrapper {
+  @apply py-8 px-4 sm:px-6 md:p-6 lg:px-8 max-w-full lg:max-w-7xl lg:mx-auto w-full;
+}
+
+html, body {
+  @apply bg-accent;
+}
+
+h1 {
+  @apply text-5xl md:text-7xl font-semibold;
+}
