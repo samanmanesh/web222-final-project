@@ -22,7 +22,7 @@ export default function About() {
     "Node.js",
     "Express",
     "MongoDB",
-    "GraphQL",
+    "SQL",
     "Apollo",
     "Next.js",
     "Git",
@@ -30,7 +30,7 @@ export default function About() {
     "CSS",
     "SASS",
     "SCSS",
-    "Styled Components",
+    "Styled Components","Tailwind CSS"
   ]
 
   return (
