@@ -63,6 +63,7 @@ export default function Form(): ReactElement {
             name="about"
             value="Question"
             onClick={hideField}
+            className=" form-radio text-secondbg  mx-2 border-2 border-black"
           />
           <label htmlFor="QA">Question</label>
           <br />
@@ -72,6 +73,7 @@ export default function Form(): ReactElement {
             name="about"
             value="Comment"
             onClick={hideField}
+            className="form-radio text-secondbg  mx-2 border-2 border-black"
           />
           <label htmlFor="CM">Comment</label>
           <br />
@@ -81,6 +83,7 @@ export default function Form(): ReactElement {
             name="about"
             onClick={() => setShowField(true)}
             value="Hiring"
+            className=" form-radio text-secondbg  mx-2 border-2 border-black"
           />
           <label htmlFor="HI">Hiring</label>
           <br />
@@ -97,7 +100,7 @@ export default function Form(): ReactElement {
         <input
           type="submit"
           value="Submit"
-          className="px-4 py-2 rounded cursor-pointer text-bg-secondbg text-lg font-semibold border-4  border-secondbg  self-end md:col-span-2 focus:bg-red-400 outline-none focus:text-white transition"
+          className="px-4 py-2 rounded cursor-pointer text-bg-secondbg text-lg font-semibold border-4  border-secondbg  self-end md:col-span-2 focus:bg-red-400 hover:bg-red-400 outline-none focus:text-white transition"
         />
         <input
           type="hidden"
