@@ -1,13 +1,14 @@
-import React, { ReactElement, useState, useRef } from "react";
+import React, { ReactElement, useState } from "react";
 
 export default function Form(): ReactElement {
   const [showField, setShowField] = useState(false);
   const hideField = (): void => setShowField(false);
+  const cities = ["Toronto","Ottawa","Quebec" ,"Vancouver", "Montreal","Calgary","Edmonton" ,"Winnipeg", "Victoria"];
 
   return (
     <div>
       <form
-        action=""
+        action="https://httpbin.org/post"
         className="grid gap-y-4 gap-x-8 md:grid-cols-2"
         method="post"
       >
@@ -34,12 +35,9 @@ export default function Form(): ReactElement {
           City
           <input list="country" required type="text" />
           <datalist id="country">
-            <option value="Toronto" />
-            <option value="New York" />
-            <option value="London" />
-            <option value="Rome" />
-            <option value="Paris" />
-            <option value="Istanbul" />
+            {cities.map((city) =>{
+              return <option value={city} key={city} />
+            })}
           </datalist>
         </label>
 
