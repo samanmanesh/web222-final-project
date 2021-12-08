@@ -62,6 +62,7 @@ export default function Form(): ReactElement {
             value="Question"
             onClick={hideField}
             className=" form-radio text-red-400  mx-2 border-2 border-black"
+            required
           />
           <label htmlFor="QA">Question</label>
           <br />
@@ -72,6 +73,7 @@ export default function Form(): ReactElement {
             value="Comment"
             onClick={hideField}
             className="form-radio text-red-400  mx-2 border-2 border-black"
+            required
           />
           <label htmlFor="CM">Comment</label>
           <br />
@@ -82,6 +84,7 @@ export default function Form(): ReactElement {
             onClick={() => setShowField(true)}
             value="Hiring"
             className=" form-radio text-red-400  mx-2 border-2 border-black"
+            required
           />
           <label htmlFor="HI">Hiring</label>
           <br />
