@@ -99,18 +99,18 @@ export default function Form(): ReactElement {
           <label htmlFor="HI">Hiring</label>
           <br />
         </div>
-        <br />
         <label htmlFor="subject" className={!showField ? "hidden" : "grid md:col-span-2"}>
           Hourly Rate
         
         <input
-          type="text"
+          type="number"
           name="subject"
           className={
             !showField
               ? "hidden"
               : "bg-secondbg rounded text-white outline-none  focus:ring-2 focus:ring-red-400  md:col-span-2"
           }
+          min="1" step="any"
         />
         </label>
         <input
