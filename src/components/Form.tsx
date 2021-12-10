@@ -3,7 +3,17 @@ import React, { ReactElement, useState } from "react";
 export default function Form(): ReactElement {
   const [showField, setShowField] = useState(false);
   const hideField = (): void => setShowField(false);
-  const cities = ["Toronto","Ottawa","Quebec" ,"Vancouver", "Montreal","Calgary","Edmonton" ,"Winnipeg", "Victoria"];
+  const cities = [
+    "Toronto",
+    "Ottawa",
+    "Quebec",
+    "Vancouver",
+    "Montreal",
+    "Calgary",
+    "Edmonton",
+    "Winnipeg",
+    "Victoria",
+  ];
 
   return (
     <div>
@@ -35,8 +45,8 @@ export default function Form(): ReactElement {
           City
           <input list="city" required type="text" />
           <datalist id="city">
-            {cities.map((city) =>{
-              return <option value={city} key={city} />
+            {cities.map((city) => {
+              return <option value={city} key={city} />;
             })}
           </datalist>
         </label>
@@ -89,7 +99,10 @@ export default function Form(): ReactElement {
           <label htmlFor="HI">Hiring</label>
           <br />
         </div>
-
+        <br />
+        <label htmlFor="subject" className={!showField ? "hidden" : "grid md:col-span-2"}>
+          Hourly Rate
+        
         <input
           type="text"
           name="subject"
@@ -99,6 +112,7 @@ export default function Form(): ReactElement {
               : "bg-secondbg rounded text-white outline-none  focus:ring-2 focus:ring-red-400  md:col-span-2"
           }
         />
+        </label>
         <input
           type="submit"
           value="Submit"

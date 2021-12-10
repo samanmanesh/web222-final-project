@@ -19,7 +19,7 @@ export default function Home() {
         <div>
           <div className="w-4/5 h-196 rounded-lg bg-gray-900 mx-auto overflow-hidden">
             <img
-              src="./Saman's Image2.jpeg"
+              src="./Saman_image.PNG"
               alt="Saman Manesh"
               className="w-full h-full object-cover"
             />
