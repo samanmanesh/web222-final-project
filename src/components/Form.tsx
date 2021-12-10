@@ -108,7 +108,7 @@ export default function Form(): ReactElement {
           className={
             !showField
               ? "hidden"
-              : "bg-secondbg rounded text-white outline-none  focus:ring-2 focus:ring-red-400  md:col-span-2"
+              : "px-4 py-2 bg-secondbg rounded text-white outline-none  focus:ring-2 focus:ring-red-400  md:col-span-2"
           }
           min="1" step="any"
         />

@@ -8,7 +8,7 @@ export default function Home() {
           <h1 className="mb-12">Contact me</h1>
           <p className=" text-2xl font-medium text-gray-700 mb-12 mx-auto md:ml-0 max-w-sm" >Want to work together? <br/> Just want to say hi? <br/> You can reach me &rarr;</p>
           
-          <p className="text-xl font-medium text-gray-700 mb-12 mx-auto md:ml-0 max-w-sm"> Email: samansbm7@gmail.com <br/>
+          <p className="text-xl font-medium text-gray-700 mb-12 mx-auto md:ml-0 max-w-sm"> Email: msobhanmanesh@myseneca.ca <br/>
           
           Toronto, North York </p>
           
